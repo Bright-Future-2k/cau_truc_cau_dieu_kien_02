@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi ngân hàng</title>
+</head>
+<body>
+<script>
+    let money = parseInt(prompt("nhập số tiền gửi: "));
+    let lai1 = parseInt(prompt("lãi suất/năm"+ "%" ));
+    let kyhan = prompt("kỳ hạn ra sao: ");
+    let a = "k kỳ hạn";
+    let b = "có kỳ hạn ";
+    if(kyhan === a){
+        let day = prompt("số ngày gửi: ");
+        let lai = money * lai1 * day;
+        alert("tiền lãi là" + lai)
+    }else if (kyhan === b){
+        let day = prompt("hạn số ngày gửi: ");
+        let lai = money * lai1 * day;
+        alert("tiền lãi là " +lai)
+    }
+</script>
+</body>
+</html>

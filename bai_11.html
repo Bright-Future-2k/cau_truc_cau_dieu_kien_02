@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+    let tienLuong = parseInt(prompt("tiền lương: "));
+    let tienCong = parseInt(prompt("tiền công: "));
+    let phuCap = parseInt(prompt("tiền phụ cấp: "));
+    let add = tienCong+tienLuong+phuCap;
+    let mienThue = parseInt(prompt("khoản miễn thuế:"));
+    let chiuThue = add - mienThue;
+    let giamTru = parseInt(prompt("các khoản giảm trừ:"));
+    let tinhThue = chiuThue - giamTru;
+    let canNhanNop = tinhThue * add;
+    alert("thế cá nhân là " + canNhanNop);
+</script>
+</body>
+</html>

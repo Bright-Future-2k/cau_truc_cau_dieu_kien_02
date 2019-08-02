@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhập số a: "));
+    let b = parseInt(prompt("nhập số b: "));
+    let c = parseInt(prompt("nhập số c: "));
+    let denTa = b*b - 4 * a * c;
+    let nghiemKep = -b/2*a;
+    let nghiep1 = (-b+Math.sqrt(denTa)/2*a);
+    let nghiep2 = (-b-Math.sqrt(denTa)/2*a);
+
+    if (a ===0 ){
+        alert("đấy k phải là phương trình")
+    }else if (denTa < 0){
+        alert("phương trình vô nghiệm");
+    }else if (denTa === 0){
+        alert("phương trình co nghiệp kép bằng " + nghiemKep);
+    }else  if (denTa > 0){
+        alert("phương trình có 2 nghiệm x1= " + nghiep1 + " ; x2= " +nghiep2);
+    }
+</script>
+</body>
+</html>

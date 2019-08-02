@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dienap = parseInt(prompt("loại điện áp: " + "" + "(kV)"));
+    if (dienap > 110){
+        let num = parseInt(prompt("số điện: "));
+        let add = num * 1.536;
+        alert("giá điện tiêu thụ là: " + add);
+    }else if (dienap > 22 ){
+        let num = parseInt(prompt("số điện: "));
+        let add = num *1.555;
+        alert("giá điện tiêu thụ là: " + add);
+    }else if (dienap > 6){
+        let num = parseInt(prompt("số điện: "));
+        let add = num *1.611;
+        alert("giá điện tiêu thụ là: " + add);
+    }else{
+        let num = parseInt(prompt("số điện: "));
+        let add = num *1.685;
+        alert("giá điện tiêu thụ là: " + add);
+    }
+</script>
+</body>
+</html>
